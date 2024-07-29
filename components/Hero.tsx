@@ -3,8 +3,14 @@ import { LeftSpotlight } from '@/components/ui/LeftSpotlight';
 import { RightSpotlight } from './ui/RightSpotlight';
 import Button from './ui/Button';
 import { FaLocationArrow } from 'react-icons/fa';
+import { TypewriterEffect } from './ui/Typewriter';
 
 export default function Hero() {
+  const words = [
+    { text: 'Hello ', className: 'text-red-500' },
+    { text: "I'M", className: 'text-blue-500' },
+    { text: 'Bhargav', className: 'text-green-500' },
+  ];
   return (
     <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <div>
@@ -25,6 +31,11 @@ export default function Hero() {
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Bhargav thakar
           </h2>
+          <TypewriterEffect
+            words={words}
+            className="mt-4"
+            cursorClassName="bg-blue-500"
+          />
 
           <a href="#about">
             <Button

@@ -1,6 +1,8 @@
 import React from 'react';
 import { LeftSpotlight } from '@/components/ui/LeftSpotlight';
 import { RightSpotlight } from './ui/RightSpotlight';
+import Button from './ui/Button';
+import { FaLocationArrow } from 'react-icons/fa';
 
 export default function Hero() {
   return (
@@ -23,6 +25,14 @@ export default function Hero() {
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Bhargav thakar
           </h2>
+
+          <a href="#about">
+            <Button
+              title="show my work"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
         </div>
       </div>
     </div>

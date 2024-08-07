@@ -8,7 +8,7 @@ export default function Hero() {
   const words = [
     { text: 'Hello ', className: 'text-red-500' },
     { text: "I'M", className: 'text-blue-500' },
-    { text: 'Bhargav', className: 'text-green-500' },
+    { text: 'Bhargav', className: 'text-green' },
   ];
   return (
     <div className="h-[50rem] w-full rounded-md flex md:items-center justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">

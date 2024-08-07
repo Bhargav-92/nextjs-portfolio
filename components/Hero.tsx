@@ -1,6 +1,5 @@
 import React from 'react';
 import { LeftSpotlight } from '@/components/ui/LeftSpotlight';
-import { RightSpotlight } from './ui/RightSpotlight';
 import Button from './ui/Button';
 import { FaLocationArrow } from 'react-icons/fa';
 import { TypewriterEffect } from './ui/Typewriter';
@@ -12,7 +11,7 @@ export default function Hero() {
     { text: 'Bhargav', className: 'text-green-500' },
   ];
   return (
-    <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="h-[50rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <div>
         <LeftSpotlight
           className="-top-10 left-0 md:left-2 md:-top-20"
